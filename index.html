@@ -8,6 +8,31 @@
 	</head>
 	<body>
 		<script type="application/processing">
+		class Star {
+
+  static final float or_red=225, or_green=170, or_blue=0;
+  static final float light_red=255, light_green=250, light_blue=100;
+
+  float c_mult=0.05;
+  float color_sp;
+  float rot =0;
+  float x, y;
+  float turn_sp;
+  int npoints;
+  float radius1, radius2;
+  Star (float _x, float _y, float _colorsp, int _npoints, float _turnsp, float _r1, float _r2) {
+    x=_x;
+    y=_y;
+
+    c_mult= 0;
+    color_sp =_colorsp;
+    rot=0;
+    turn_sp=_turnsp;
+    radius1=_r1;
+    radius2 = _r2;
+    npoints = _npoints;
+  }
+
 
   void show() {
 
@@ -116,31 +141,6 @@ void keyPressed() //if spacebar is clicked, the program will restart
     setup ();
   }
 }
-	class Star {
-
-  static final float or_red=225, or_green=170, or_blue=0;
-  static final float light_red=255, light_green=250, light_blue=100;
-
-  float c_mult=0.05;
-  float color_sp;
-  float rot =0;
-  float x, y;
-  float turn_sp;
-  int npoints;
-  float radius1, radius2;
-  Star (float _x, float _y, float _colorsp, int _npoints, float _turnsp, float _r1, float _r2) {
-    x=_x;
-    y=_y;
-
-    c_mult= 0;
-    color_sp =_colorsp;
-    rot=0;
-    turn_sp=_turnsp;
-    radius1=_r1;
-    radius2 = _r2;
-    npoints = _npoints;
-  }
-
 		</script>
 		<canvas> </canvas>
 	</body>
