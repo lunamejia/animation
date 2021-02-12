@@ -76,7 +76,7 @@ float boat_x=50, boat_y=570;
 float text_size=30;
 float star_x, star_y;
 void setup() {
-  size(1500, 1500); //sets window size
+  size(1200, 1200); //sets window size
 
   boat_x=50;
   boat_y=570;
@@ -85,13 +85,13 @@ void setup() {
   foreground.resize(width, 0);
 
   boatPicture = loadImage("boat.png");// boat image
-  boatPicture.resize(100, 0);
+  boatPicture.resize(50, 0);
 
   shootingStarPicture = loadImage("shootingstar.png");//shooting star image
-  shootingStarPicture.resize(100, 0);
+  shootingStarPicture.resize(50, 0);
 
-  star_x = random(550, 700); //shooting star random range of x value coordinates
-  star_y = random(0, 400); // shooting star random range of y value coordinates 
+  star_x = random(700, 900); //shooting star random range of x value coordinates
+  star_y = random(0, 600); // shooting star random range of y value coordinates 
 
   s= new Star[n_stars];//uses arrays to create multiple stars with different shapes and speeds
   s[0]= new Star(100, 50, 0.05, 5, -0.001, 20, 10); 
