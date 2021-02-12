@@ -72,7 +72,7 @@ PImage shootingStarPicture;
 PFont font;
 Star[] s;
 int n_stars= 8;
-float boat_x=50, boat_y=570;
+float boat_x=50, boat_y=70;
 float text_size=30;
 float star_x, star_y;
 void setup() {
@@ -113,7 +113,7 @@ void draw() {
   image(foreground, 0, height-foreground.height);
 
   boat_x = boat_x +2.0; // sets speed 
-  boat_y =40 * cos(boat_x/45) + 150; //boat moves up and down using this function
+  boat_y =40 * cos(boat_x/45) + 550; //boat moves up and down using this function
 
   image (boatPicture, boat_x, boat_y);
 
